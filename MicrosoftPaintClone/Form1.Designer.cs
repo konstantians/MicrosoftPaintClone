@@ -46,6 +46,10 @@ namespace MicrosoftPaintClone
             this.brushesCombobox = new System.Windows.Forms.ComboBox();
             this.shapesPanel = new System.Windows.Forms.Panel();
             this.shapesLabel = new System.Windows.Forms.Label();
+            this.sizesPanel = new System.Windows.Forms.Panel();
+            this.sizesLabel = new System.Windows.Forms.Label();
+            this.sizesCombobox = new System.Windows.Forms.ComboBox();
+            this.sizesPictureBox = new System.Windows.Forms.PictureBox();
             this.shapesTrianglePictureBox = new System.Windows.Forms.PictureBox();
             this.ShapesRectanglePictureBox = new System.Windows.Forms.PictureBox();
             this.ShapesCirclePictureBox = new System.Windows.Forms.PictureBox();
@@ -67,12 +71,42 @@ namespace MicrosoftPaintClone
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorPanel = new System.Windows.Forms.Panel();
+            this.colorLabel = new System.Windows.Forms.Label();
+            this.colorOnePanel = new System.Windows.Forms.Panel();
+            this.colorOneLabel = new System.Windows.Forms.Label();
+            this.colorOneWrapperPanel = new System.Windows.Forms.Panel();
+            this.ColorTwoWrapperPanel = new System.Windows.Forms.Panel();
+            this.ColorTwoPanel = new System.Windows.Forms.Panel();
+            this.ColorTwoLabel = new System.Windows.Forms.Label();
+            this.colorsBlackPanel = new System.Windows.Forms.Panel();
+            this.ColorsOrangePanel = new System.Windows.Forms.Panel();
+            this.colorsDarkRedPanel = new System.Windows.Forms.Panel();
+            this.colorsGrayPanel = new System.Windows.Forms.Panel();
+            this.colorsRedPanel = new System.Windows.Forms.Panel();
+            this.colorsPurplePanel = new System.Windows.Forms.Panel();
+            this.colorsIndigoPanel = new System.Windows.Forms.Panel();
+            this.colorsTurquoisePanel = new System.Windows.Forms.Panel();
+            this.colorsGreenPanel = new System.Windows.Forms.Panel();
+            this.colorsYellowPanel = new System.Windows.Forms.Panel();
+            this.colorsWhitePanel = new System.Windows.Forms.Panel();
+            this.colorsLightGrayPanel = new System.Windows.Forms.Panel();
+            this.colorsBrownPanel = new System.Windows.Forms.Panel();
+            this.colorsPinkPanel = new System.Windows.Forms.Panel();
+            this.colorsGoldPanel = new System.Windows.Forms.Panel();
+            this.colorsLightYellowPanel = new System.Windows.Forms.Panel();
+            this.colorsLightGreenPanel = new System.Windows.Forms.Panel();
+            this.colorsLightTurquoisePanel = new System.Windows.Forms.Panel();
+            this.colorsBlueGrayPanel = new System.Windows.Forms.Panel();
+            this.colorsLavenderPanel = new System.Windows.Forms.Panel();
             this.paintMenuStrip.SuspendLayout();
             this.homeSubMenuPanel.SuspendLayout();
             this.toolsPanel.SuspendLayout();
             this.clipboardPanel.SuspendLayout();
             this.brushesPanel.SuspendLayout();
             this.shapesPanel.SuspendLayout();
+            this.sizesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sizesPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shapesTrianglePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapesRectanglePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapesCirclePictureBox)).BeginInit();
@@ -87,6 +121,9 @@ namespace MicrosoftPaintClone
             ((System.ComponentModel.ISupportInitialize)(this.clipboardPastePicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clipboardCopyPicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clipboardCutPicturebox)).BeginInit();
+            this.colorPanel.SuspendLayout();
+            this.colorOneWrapperPanel.SuspendLayout();
+            this.ColorTwoWrapperPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // paintMenuStrip
@@ -98,7 +135,7 @@ namespace MicrosoftPaintClone
             this.viewToolStripMenuItem});
             this.paintMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.paintMenuStrip.Name = "paintMenuStrip";
-            this.paintMenuStrip.Size = new System.Drawing.Size(1184, 24);
+            this.paintMenuStrip.Size = new System.Drawing.Size(1243, 24);
             this.paintMenuStrip.TabIndex = 0;
             this.paintMenuStrip.Text = "menuStrip";
             // 
@@ -137,6 +174,8 @@ namespace MicrosoftPaintClone
             // 
             this.homeSubMenuPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.homeSubMenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.homeSubMenuPanel.Controls.Add(this.colorPanel);
+            this.homeSubMenuPanel.Controls.Add(this.sizesPanel);
             this.homeSubMenuPanel.Controls.Add(this.shapesPanel);
             this.homeSubMenuPanel.Controls.Add(this.brushesPanel);
             this.homeSubMenuPanel.Controls.Add(this.toolsPanel);
@@ -144,7 +183,7 @@ namespace MicrosoftPaintClone
             this.homeSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.homeSubMenuPanel.Location = new System.Drawing.Point(0, 24);
             this.homeSubMenuPanel.Name = "homeSubMenuPanel";
-            this.homeSubMenuPanel.Size = new System.Drawing.Size(1184, 130);
+            this.homeSubMenuPanel.Size = new System.Drawing.Size(1243, 130);
             this.homeSubMenuPanel.TabIndex = 1;
             // 
             // toolsPanel
@@ -287,6 +326,46 @@ namespace MicrosoftPaintClone
             this.shapesLabel.Size = new System.Drawing.Size(64, 20);
             this.shapesLabel.TabIndex = 3;
             this.shapesLabel.Text = "Shapes";
+            // 
+            // sizesPanel
+            // 
+            this.sizesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sizesPanel.Controls.Add(this.sizesPictureBox);
+            this.sizesPanel.Controls.Add(this.sizesLabel);
+            this.sizesPanel.Controls.Add(this.sizesCombobox);
+            this.sizesPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sizesPanel.Location = new System.Drawing.Point(598, 0);
+            this.sizesPanel.Name = "sizesPanel";
+            this.sizesPanel.Size = new System.Drawing.Size(78, 128);
+            this.sizesPanel.TabIndex = 2;
+            // 
+            // sizesLabel
+            // 
+            this.sizesLabel.AutoSize = true;
+            this.sizesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.sizesLabel.Location = new System.Drawing.Point(15, 102);
+            this.sizesLabel.Name = "sizesLabel";
+            this.sizesLabel.Size = new System.Drawing.Size(48, 20);
+            this.sizesLabel.TabIndex = 4;
+            this.sizesLabel.Text = "Sizes";
+            // 
+            // sizesCombobox
+            // 
+            this.sizesCombobox.FormattingEnabled = true;
+            this.sizesCombobox.Location = new System.Drawing.Point(15, 62);
+            this.sizesCombobox.Name = "sizesCombobox";
+            this.sizesCombobox.Size = new System.Drawing.Size(48, 21);
+            this.sizesCombobox.TabIndex = 5;
+            // 
+            // sizesPictureBox
+            // 
+            this.sizesPictureBox.BackgroundImage = global::MicrosoftPaintClone.Properties.Resources.brush1;
+            this.sizesPictureBox.Image = global::MicrosoftPaintClone.Properties.Resources.sizes;
+            this.sizesPictureBox.Location = new System.Drawing.Point(17, 14);
+            this.sizesPictureBox.Name = "sizesPictureBox";
+            this.sizesPictureBox.Size = new System.Drawing.Size(46, 42);
+            this.sizesPictureBox.TabIndex = 6;
+            this.sizesPictureBox.TabStop = false;
             // 
             // shapesTrianglePictureBox
             // 
@@ -479,19 +558,278 @@ namespace MicrosoftPaintClone
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(140, 52);
             this.exitToolStripMenuItem1.Text = "Exit";
             // 
+            // colorPanel
+            // 
+            this.colorPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorPanel.Controls.Add(this.colorsLavenderPanel);
+            this.colorPanel.Controls.Add(this.colorsBlueGrayPanel);
+            this.colorPanel.Controls.Add(this.colorsLightTurquoisePanel);
+            this.colorPanel.Controls.Add(this.colorsLightGreenPanel);
+            this.colorPanel.Controls.Add(this.colorsLightYellowPanel);
+            this.colorPanel.Controls.Add(this.colorsGoldPanel);
+            this.colorPanel.Controls.Add(this.colorsPinkPanel);
+            this.colorPanel.Controls.Add(this.colorsBrownPanel);
+            this.colorPanel.Controls.Add(this.colorsLightGrayPanel);
+            this.colorPanel.Controls.Add(this.colorsWhitePanel);
+            this.colorPanel.Controls.Add(this.colorsPurplePanel);
+            this.colorPanel.Controls.Add(this.colorsIndigoPanel);
+            this.colorPanel.Controls.Add(this.colorsTurquoisePanel);
+            this.colorPanel.Controls.Add(this.colorsGreenPanel);
+            this.colorPanel.Controls.Add(this.colorsYellowPanel);
+            this.colorPanel.Controls.Add(this.colorsBlackPanel);
+            this.colorPanel.Controls.Add(this.ColorsOrangePanel);
+            this.colorPanel.Controls.Add(this.colorsRedPanel);
+            this.colorPanel.Controls.Add(this.ColorTwoWrapperPanel);
+            this.colorPanel.Controls.Add(this.colorsDarkRedPanel);
+            this.colorPanel.Controls.Add(this.colorsGrayPanel);
+            this.colorPanel.Controls.Add(this.colorLabel);
+            this.colorPanel.Controls.Add(this.colorOneWrapperPanel);
+            this.colorPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.colorPanel.Location = new System.Drawing.Point(676, 0);
+            this.colorPanel.Name = "colorPanel";
+            this.colorPanel.Size = new System.Drawing.Size(499, 128);
+            this.colorPanel.TabIndex = 2;
+            // 
+            // colorLabel
+            // 
+            this.colorLabel.AutoSize = true;
+            this.colorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.colorLabel.Location = new System.Drawing.Point(147, 101);
+            this.colorLabel.Name = "colorLabel";
+            this.colorLabel.Size = new System.Drawing.Size(54, 20);
+            this.colorLabel.TabIndex = 5;
+            this.colorLabel.Text = "Colors";
+            // 
+            // colorOnePanel
+            // 
+            this.colorOnePanel.BackColor = System.Drawing.Color.Black;
+            this.colorOnePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorOnePanel.Location = new System.Drawing.Point(16, 13);
+            this.colorOnePanel.Name = "colorOnePanel";
+            this.colorOnePanel.Size = new System.Drawing.Size(35, 35);
+            this.colorOnePanel.TabIndex = 6;
+            // 
+            // colorOneLabel
+            // 
+            this.colorOneLabel.AutoSize = true;
+            this.colorOneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.colorOneLabel.Location = new System.Drawing.Point(3, 51);
+            this.colorOneLabel.Name = "colorOneLabel";
+            this.colorOneLabel.Size = new System.Drawing.Size(59, 20);
+            this.colorOneLabel.TabIndex = 7;
+            this.colorOneLabel.Text = "Color 1";
+            // 
+            // colorOneWrapperPanel
+            // 
+            this.colorOneWrapperPanel.Controls.Add(this.colorOnePanel);
+            this.colorOneWrapperPanel.Controls.Add(this.colorOneLabel);
+            this.colorOneWrapperPanel.Location = new System.Drawing.Point(16, 3);
+            this.colorOneWrapperPanel.Name = "colorOneWrapperPanel";
+            this.colorOneWrapperPanel.Size = new System.Drawing.Size(65, 71);
+            this.colorOneWrapperPanel.TabIndex = 8;
+            // 
+            // ColorTwoWrapperPanel
+            // 
+            this.ColorTwoWrapperPanel.Controls.Add(this.ColorTwoPanel);
+            this.ColorTwoWrapperPanel.Controls.Add(this.ColorTwoLabel);
+            this.ColorTwoWrapperPanel.Location = new System.Drawing.Point(91, 3);
+            this.ColorTwoWrapperPanel.Name = "ColorTwoWrapperPanel";
+            this.ColorTwoWrapperPanel.Size = new System.Drawing.Size(65, 71);
+            this.ColorTwoWrapperPanel.TabIndex = 9;
+            // 
+            // ColorTwoPanel
+            // 
+            this.ColorTwoPanel.BackColor = System.Drawing.Color.White;
+            this.ColorTwoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ColorTwoPanel.Location = new System.Drawing.Point(15, 13);
+            this.ColorTwoPanel.Name = "ColorTwoPanel";
+            this.ColorTwoPanel.Size = new System.Drawing.Size(35, 35);
+            this.ColorTwoPanel.TabIndex = 6;
+            // 
+            // ColorTwoLabel
+            // 
+            this.ColorTwoLabel.AutoSize = true;
+            this.ColorTwoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ColorTwoLabel.Location = new System.Drawing.Point(3, 51);
+            this.ColorTwoLabel.Name = "ColorTwoLabel";
+            this.ColorTwoLabel.Size = new System.Drawing.Size(59, 20);
+            this.ColorTwoLabel.TabIndex = 7;
+            this.ColorTwoLabel.Text = "Color 2";
+            // 
+            // colorsBlackPanel
+            // 
+            this.colorsBlackPanel.BackColor = System.Drawing.Color.Black;
+            this.colorsBlackPanel.Location = new System.Drawing.Point(176, 16);
+            this.colorsBlackPanel.Name = "colorsBlackPanel";
+            this.colorsBlackPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsBlackPanel.TabIndex = 3;
+            // 
+            // ColorsOrangePanel
+            // 
+            this.ColorsOrangePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ColorsOrangePanel.Location = new System.Drawing.Point(300, 16);
+            this.ColorsOrangePanel.Name = "ColorsOrangePanel";
+            this.ColorsOrangePanel.Size = new System.Drawing.Size(25, 25);
+            this.ColorsOrangePanel.TabIndex = 4;
+            // 
+            // colorsDarkRedPanel
+            // 
+            this.colorsDarkRedPanel.BackColor = System.Drawing.Color.DarkRed;
+            this.colorsDarkRedPanel.Location = new System.Drawing.Point(238, 16);
+            this.colorsDarkRedPanel.Name = "colorsDarkRedPanel";
+            this.colorsDarkRedPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsDarkRedPanel.TabIndex = 5;
+            // 
+            // colorsGrayPanel
+            // 
+            this.colorsGrayPanel.BackColor = System.Drawing.Color.Gray;
+            this.colorsGrayPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.colorsGrayPanel.Location = new System.Drawing.Point(207, 16);
+            this.colorsGrayPanel.Name = "colorsGrayPanel";
+            this.colorsGrayPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsGrayPanel.TabIndex = 6;
+            // 
+            // colorsRedPanel
+            // 
+            this.colorsRedPanel.BackColor = System.Drawing.Color.Red;
+            this.colorsRedPanel.Location = new System.Drawing.Point(269, 16);
+            this.colorsRedPanel.Name = "colorsRedPanel";
+            this.colorsRedPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsRedPanel.TabIndex = 7;
+            // 
+            // colorsPurplePanel
+            // 
+            this.colorsPurplePanel.BackColor = System.Drawing.Color.Purple;
+            this.colorsPurplePanel.Location = new System.Drawing.Point(455, 16);
+            this.colorsPurplePanel.Name = "colorsPurplePanel";
+            this.colorsPurplePanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsPurplePanel.TabIndex = 8;
+            // 
+            // colorsIndigoPanel
+            // 
+            this.colorsIndigoPanel.BackColor = System.Drawing.Color.Blue;
+            this.colorsIndigoPanel.Location = new System.Drawing.Point(424, 16);
+            this.colorsIndigoPanel.Name = "colorsIndigoPanel";
+            this.colorsIndigoPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsIndigoPanel.TabIndex = 9;
+            // 
+            // colorsTurquoisePanel
+            // 
+            this.colorsTurquoisePanel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.colorsTurquoisePanel.Location = new System.Drawing.Point(393, 16);
+            this.colorsTurquoisePanel.Name = "colorsTurquoisePanel";
+            this.colorsTurquoisePanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsTurquoisePanel.TabIndex = 10;
+            // 
+            // colorsGreenPanel
+            // 
+            this.colorsGreenPanel.BackColor = System.Drawing.Color.Green;
+            this.colorsGreenPanel.Location = new System.Drawing.Point(362, 16);
+            this.colorsGreenPanel.Name = "colorsGreenPanel";
+            this.colorsGreenPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsGreenPanel.TabIndex = 11;
+            // 
+            // colorsYellowPanel
+            // 
+            this.colorsYellowPanel.BackColor = System.Drawing.Color.Yellow;
+            this.colorsYellowPanel.Location = new System.Drawing.Point(331, 16);
+            this.colorsYellowPanel.Name = "colorsYellowPanel";
+            this.colorsYellowPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsYellowPanel.TabIndex = 12;
+            // 
+            // colorsWhitePanel
+            // 
+            this.colorsWhitePanel.BackColor = System.Drawing.Color.White;
+            this.colorsWhitePanel.Location = new System.Drawing.Point(176, 49);
+            this.colorsWhitePanel.Name = "colorsWhitePanel";
+            this.colorsWhitePanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsWhitePanel.TabIndex = 13;
+            // 
+            // colorsLightGrayPanel
+            // 
+            this.colorsLightGrayPanel.BackColor = System.Drawing.Color.LightGray;
+            this.colorsLightGrayPanel.Location = new System.Drawing.Point(207, 49);
+            this.colorsLightGrayPanel.Name = "colorsLightGrayPanel";
+            this.colorsLightGrayPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsLightGrayPanel.TabIndex = 14;
+            // 
+            // colorsBrownPanel
+            // 
+            this.colorsBrownPanel.BackColor = System.Drawing.Color.Sienna;
+            this.colorsBrownPanel.Location = new System.Drawing.Point(238, 49);
+            this.colorsBrownPanel.Name = "colorsBrownPanel";
+            this.colorsBrownPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsBrownPanel.TabIndex = 15;
+            // 
+            // colorsPinkPanel
+            // 
+            this.colorsPinkPanel.BackColor = System.Drawing.Color.Pink;
+            this.colorsPinkPanel.Location = new System.Drawing.Point(269, 49);
+            this.colorsPinkPanel.Name = "colorsPinkPanel";
+            this.colorsPinkPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsPinkPanel.TabIndex = 16;
+            // 
+            // colorsGoldPanel
+            // 
+            this.colorsGoldPanel.BackColor = System.Drawing.Color.Gold;
+            this.colorsGoldPanel.Location = new System.Drawing.Point(300, 49);
+            this.colorsGoldPanel.Name = "colorsGoldPanel";
+            this.colorsGoldPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsGoldPanel.TabIndex = 17;
+            // 
+            // colorsLightYellowPanel
+            // 
+            this.colorsLightYellowPanel.BackColor = System.Drawing.Color.Khaki;
+            this.colorsLightYellowPanel.Location = new System.Drawing.Point(331, 49);
+            this.colorsLightYellowPanel.Name = "colorsLightYellowPanel";
+            this.colorsLightYellowPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsLightYellowPanel.TabIndex = 18;
+            // 
+            // colorsLightGreenPanel
+            // 
+            this.colorsLightGreenPanel.BackColor = System.Drawing.Color.LawnGreen;
+            this.colorsLightGreenPanel.Location = new System.Drawing.Point(362, 49);
+            this.colorsLightGreenPanel.Name = "colorsLightGreenPanel";
+            this.colorsLightGreenPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsLightGreenPanel.TabIndex = 19;
+            // 
+            // colorsLightTurquoisePanel
+            // 
+            this.colorsLightTurquoisePanel.BackColor = System.Drawing.Color.Aqua;
+            this.colorsLightTurquoisePanel.Location = new System.Drawing.Point(393, 49);
+            this.colorsLightTurquoisePanel.Name = "colorsLightTurquoisePanel";
+            this.colorsLightTurquoisePanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsLightTurquoisePanel.TabIndex = 20;
+            // 
+            // colorsBlueGrayPanel
+            // 
+            this.colorsBlueGrayPanel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.colorsBlueGrayPanel.Location = new System.Drawing.Point(424, 49);
+            this.colorsBlueGrayPanel.Name = "colorsBlueGrayPanel";
+            this.colorsBlueGrayPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsBlueGrayPanel.TabIndex = 21;
+            // 
+            // colorsLavenderPanel
+            // 
+            this.colorsLavenderPanel.BackColor = System.Drawing.Color.Magenta;
+            this.colorsLavenderPanel.Location = new System.Drawing.Point(455, 49);
+            this.colorsLavenderPanel.Name = "colorsLavenderPanel";
+            this.colorsLavenderPanel.Size = new System.Drawing.Size(25, 25);
+            this.colorsLavenderPanel.TabIndex = 22;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1243, 661);
             this.Controls.Add(this.homeSubMenuPanel);
             this.Controls.Add(this.paintMenuStrip);
             this.MainMenuStrip = this.paintMenuStrip;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "z";
+            this.Text = "PaintClone";
             this.paintMenuStrip.ResumeLayout(false);
             this.paintMenuStrip.PerformLayout();
             this.homeSubMenuPanel.ResumeLayout(false);
@@ -503,6 +841,9 @@ namespace MicrosoftPaintClone
             this.brushesPanel.PerformLayout();
             this.shapesPanel.ResumeLayout(false);
             this.shapesPanel.PerformLayout();
+            this.sizesPanel.ResumeLayout(false);
+            this.sizesPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sizesPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shapesTrianglePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapesRectanglePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapesCirclePictureBox)).EndInit();
@@ -517,6 +858,12 @@ namespace MicrosoftPaintClone
             ((System.ComponentModel.ISupportInitialize)(this.clipboardPastePicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clipboardCopyPicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clipboardCutPicturebox)).EndInit();
+            this.colorPanel.ResumeLayout(false);
+            this.colorPanel.PerformLayout();
+            this.colorOneWrapperPanel.ResumeLayout(false);
+            this.colorOneWrapperPanel.PerformLayout();
+            this.ColorTwoWrapperPanel.ResumeLayout(false);
+            this.ColorTwoWrapperPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,6 +909,38 @@ namespace MicrosoftPaintClone
         private System.Windows.Forms.PictureBox ShapesCirclePictureBox;
         private System.Windows.Forms.PictureBox ShapesRectanglePictureBox;
         private System.Windows.Forms.PictureBox shapesTrianglePictureBox;
+        private System.Windows.Forms.Panel sizesPanel;
+        private System.Windows.Forms.PictureBox sizesPictureBox;
+        private System.Windows.Forms.ComboBox sizesCombobox;
+        private System.Windows.Forms.Label sizesLabel;
+        private System.Windows.Forms.Panel colorPanel;
+        private System.Windows.Forms.Panel colorsBlackPanel;
+        private System.Windows.Forms.Panel ColorTwoWrapperPanel;
+        private System.Windows.Forms.Panel ColorTwoPanel;
+        private System.Windows.Forms.Label ColorTwoLabel;
+        private System.Windows.Forms.Label colorLabel;
+        private System.Windows.Forms.Panel colorOneWrapperPanel;
+        private System.Windows.Forms.Panel colorOnePanel;
+        private System.Windows.Forms.Label colorOneLabel;
+        private System.Windows.Forms.Panel ColorsOrangePanel;
+        private System.Windows.Forms.Panel colorsDarkRedPanel;
+        private System.Windows.Forms.Panel colorsGrayPanel;
+        private System.Windows.Forms.Panel colorsRedPanel;
+        private System.Windows.Forms.Panel colorsPurplePanel;
+        private System.Windows.Forms.Panel colorsLavenderPanel;
+        private System.Windows.Forms.Panel colorsBlueGrayPanel;
+        private System.Windows.Forms.Panel colorsLightTurquoisePanel;
+        private System.Windows.Forms.Panel colorsLightGreenPanel;
+        private System.Windows.Forms.Panel colorsLightYellowPanel;
+        private System.Windows.Forms.Panel colorsGoldPanel;
+        private System.Windows.Forms.Panel colorsPinkPanel;
+        private System.Windows.Forms.Panel colorsBrownPanel;
+        private System.Windows.Forms.Panel colorsLightGrayPanel;
+        private System.Windows.Forms.Panel colorsWhitePanel;
+        private System.Windows.Forms.Panel colorsIndigoPanel;
+        private System.Windows.Forms.Panel colorsTurquoisePanel;
+        private System.Windows.Forms.Panel colorsGreenPanel;
+        private System.Windows.Forms.Panel colorsYellowPanel;
     }
 }
 

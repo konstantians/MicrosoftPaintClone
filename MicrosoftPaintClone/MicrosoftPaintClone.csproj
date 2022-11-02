@@ -126,7 +126,6 @@
     <None Include="resources\openFile.PNG" />
     <None Include="resources\newFile.PNG" />
     <None Include="resources\line.PNG" />
-    <Content Include="resources\notes.txt" />
     <None Include="resources\rectangle.PNG" />
     <None Include="resources\rectangle1.PNG" />
     <Content Include="resources\selection shapes\freeform select.PNG" />
@@ -135,6 +134,11 @@
     <Content Include="resources\shapes icons\line.PNG" />
     <Content Include="resources\shapes icons\rectangle.PNG" />
     <Content Include="resources\shapes icons\triangle.PNG" />
+    <Content Include="resources\sizes\extraFatSize.PNG" />
+    <Content Include="resources\sizes\fatSize.PNG" />
+    <Content Include="resources\sizes\mediumSize.PNG" />
+    <Content Include="resources\sizes\sizes.PNG" />
+    <Content Include="resources\sizes\thinSize.PNG" />
     <Content Include="resources\tools icons\colorPicker.PNG" />
     <Content Include="resources\tools icons\eraser.PNG" />
     <Content Include="resources\tools icons\fillWithColor.PNG" />
