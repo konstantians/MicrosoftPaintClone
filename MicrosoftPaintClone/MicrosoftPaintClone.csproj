@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +79,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\exitImage.PNG" />
+    <None Include="resources\aboutPaint.PNG" />
+    <Content Include="resources\brushes\brush1.PNG" />
+    <Content Include="resources\brushes\brush2.PNG" />
+    <Content Include="resources\brushes\brush3.PNG" />
+    <Content Include="resources\brushes\brush4.PNG" />
+    <Content Include="resources\brushes\brush5.PNG" />
+    <Content Include="resources\brushes\brush6.PNG" />
+    <Content Include="resources\brushes\brush7.PNG" />
+    <Content Include="resources\brushes\brush8.PNG" />
+    <Content Include="resources\brushes\brush9.PNG" />
+    <Content Include="resources\clipboard section\copy.PNG" />
+    <Content Include="resources\clipboard section\cut.PNG" />
+    <Content Include="resources\clipboard section\paste.PNG" />
+    <Content Include="resources\file section icons\about.PNG" />
+    <Content Include="resources\file section icons\exit.PNG" />
+    <Content Include="resources\file section icons\new.PNG" />
+    <Content Include="resources\file section icons\open.PNG" />
+    <Content Include="resources\file section icons\print.PNG" />
+    <Content Include="resources\file section icons\save as.PNG" />
+    <Content Include="resources\file section icons\save.PNG" />
+    <Content Include="resources\file submenu images\aboutPaint.PNG" />
+    <Content Include="resources\file submenu images\exitImage.PNG" />
+    <Content Include="resources\file submenu images\newFile.PNG" />
+    <Content Include="resources\file submenu images\openFile.PNG" />
+    <Content Include="resources\file submenu images\printFile.PNG" />
+    <Content Include="resources\file submenu images\saveFile.PNG" />
+    <Content Include="resources\file submenu images\savesAsFile.PNG" />
+    <None Include="resources\printFile.PNG" />
+    <None Include="resources\savesAsFile.PNG" />
+    <None Include="resources\saveFile.PNG" />
+    <None Include="resources\openFile.PNG" />
+    <None Include="resources\newFile.PNG" />
+    <Content Include="resources\notes.txt" />
+    <Content Include="resources\selection shapes\freeform select.PNG" />
+    <Content Include="resources\selection shapes\rectangular select.PNG" />
+    <Content Include="resources\shapes icons\circle.PNG" />
+    <Content Include="resources\shapes icons\line.PNG" />
+    <Content Include="resources\shapes icons\rectangle.PNG" />
+    <Content Include="resources\shapes icons\triangle.PNG" />
+    <Content Include="resources\tools icons\colorPicker.PNG" />
+    <Content Include="resources\tools icons\eraser.PNG" />
+    <Content Include="resources\tools icons\fillWithColor.PNG" />
+    <Content Include="resources\tools icons\magnifier.PNG" />
+    <Content Include="resources\tools icons\pencil.PNG" />
+    <Content Include="resources\tools icons\text.PNG" />
+    <Content Include="resources\zoom in.PNG" />
+    <None Include="resources\zoom in1.PNG" />
+    <Content Include="resources\zoom out.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

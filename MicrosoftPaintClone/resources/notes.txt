@@ -1,0 +1,4 @@
+skip outline and fill in the shapes category
+skip rotate and resize in images
+propably skip edit color
+edit with 3d paint skip
