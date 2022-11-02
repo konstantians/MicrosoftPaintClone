@@ -213,6 +213,16 @@ namespace MicrosoftPaintClone.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap percentage_zoom {
+            get {
+                object obj = ResourceManager.GetObject("percentage zoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap printFile {
             get {
                 object obj = ResourceManager.GetObject("printFile", resourceCulture);
@@ -296,6 +306,26 @@ namespace MicrosoftPaintClone.Properties {
         internal static System.Drawing.Bitmap zoom_in {
             get {
                 object obj = ResourceManager.GetObject("zoom in", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_in1 {
+            get {
+                object obj = ResourceManager.GetObject("zoom in1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_out {
+            get {
+                object obj = ResourceManager.GetObject("zoom out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

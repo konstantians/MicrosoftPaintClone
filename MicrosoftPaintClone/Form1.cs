@@ -17,5 +17,21 @@ namespace MicrosoftPaintClone
             InitializeComponent();
         }
 
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            homeSubMenuPanel.Visible = true;
+            viewSubMenuPanel.Visible = false;
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewSubMenuPanel.Visible = true;
+            homeSubMenuPanel.Visible = false;
+        }
     }
 }
