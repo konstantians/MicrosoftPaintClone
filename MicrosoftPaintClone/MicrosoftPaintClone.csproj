@@ -81,6 +81,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\magnifier.PNG" />
+    <None Include="resources\colorPicker.PNG" />
+    <None Include="resources\eraser.PNG" />
+    <None Include="resources\text.PNG" />
+    <None Include="resources\fillWithColor.PNG" />
+    <None Include="resources\pencil.PNG" />
+    <None Include="resources\paste.PNG" />
+    <None Include="resources\copy.PNG" />
+    <None Include="resources\cut.PNG" />
     <None Include="resources\exitImage.PNG" />
     <None Include="resources\aboutPaint.PNG" />
     <Content Include="resources\brushes\brush1.PNG" />
