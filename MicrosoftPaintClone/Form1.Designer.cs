@@ -34,13 +34,23 @@ namespace MicrosoftPaintClone
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homeSubMenuPanel = new System.Windows.Forms.Panel();
+            this.toolsPanel = new System.Windows.Forms.Panel();
+            this.toolsLabel = new System.Windows.Forms.Label();
             this.clipboardPanel = new System.Windows.Forms.Panel();
             this.cliboardPasteLabel = new System.Windows.Forms.Label();
             this.clipboardCopyLabel = new System.Windows.Forms.Label();
             this.clipboardCutLabel = new System.Windows.Forms.Label();
             this.clipboardLabel = new System.Windows.Forms.Label();
-            this.toolsPanel = new System.Windows.Forms.Panel();
-            this.toolsLabel = new System.Windows.Forms.Label();
+            this.brushesPanel = new System.Windows.Forms.Panel();
+            this.brushesLabel = new System.Windows.Forms.Label();
+            this.brushesCombobox = new System.Windows.Forms.ComboBox();
+            this.shapesPanel = new System.Windows.Forms.Panel();
+            this.shapesLabel = new System.Windows.Forms.Label();
+            this.shapesTrianglePictureBox = new System.Windows.Forms.PictureBox();
+            this.ShapesRectanglePictureBox = new System.Windows.Forms.PictureBox();
+            this.ShapesCirclePictureBox = new System.Windows.Forms.PictureBox();
+            this.shapesLinePictureBox = new System.Windows.Forms.PictureBox();
+            this.brushesPictureBox = new System.Windows.Forms.PictureBox();
             this.toolsMagnifierPictureBox = new System.Windows.Forms.PictureBox();
             this.toolsColorPickerPictureBox = new System.Windows.Forms.PictureBox();
             this.toolsEraserPictureBox = new System.Windows.Forms.PictureBox();
@@ -59,8 +69,15 @@ namespace MicrosoftPaintClone
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.paintMenuStrip.SuspendLayout();
             this.homeSubMenuPanel.SuspendLayout();
-            this.clipboardPanel.SuspendLayout();
             this.toolsPanel.SuspendLayout();
+            this.clipboardPanel.SuspendLayout();
+            this.brushesPanel.SuspendLayout();
+            this.shapesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shapesTrianglePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapesRectanglePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapesCirclePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shapesLinePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brushesPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsMagnifierPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsColorPickerPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsEraserPictureBox)).BeginInit();
@@ -120,6 +137,8 @@ namespace MicrosoftPaintClone
             // 
             this.homeSubMenuPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.homeSubMenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.homeSubMenuPanel.Controls.Add(this.shapesPanel);
+            this.homeSubMenuPanel.Controls.Add(this.brushesPanel);
             this.homeSubMenuPanel.Controls.Add(this.toolsPanel);
             this.homeSubMenuPanel.Controls.Add(this.clipboardPanel);
             this.homeSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -127,6 +146,33 @@ namespace MicrosoftPaintClone
             this.homeSubMenuPanel.Name = "homeSubMenuPanel";
             this.homeSubMenuPanel.Size = new System.Drawing.Size(1184, 130);
             this.homeSubMenuPanel.TabIndex = 1;
+            // 
+            // toolsPanel
+            // 
+            this.toolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolsPanel.Controls.Add(this.toolsMagnifierPictureBox);
+            this.toolsPanel.Controls.Add(this.toolsColorPickerPictureBox);
+            this.toolsPanel.Controls.Add(this.toolsEraserPictureBox);
+            this.toolsPanel.Controls.Add(this.toolsLabel);
+            this.toolsPanel.Controls.Add(this.toolsFillWithColorPictureBox);
+            this.toolsPanel.Controls.Add(this.toolsTextPictureBox);
+            this.toolsPanel.Controls.Add(this.toolsPencilPictureBox);
+            this.toolsPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.toolsPanel.Location = new System.Drawing.Point(201, 0);
+            this.toolsPanel.Name = "toolsPanel";
+            this.toolsPanel.Size = new System.Drawing.Size(168, 128);
+            this.toolsPanel.TabIndex = 2;
+            // 
+            // toolsLabel
+            // 
+            this.toolsLabel.AutoSize = true;
+            this.toolsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.toolsLabel.Location = new System.Drawing.Point(53, 101);
+            this.toolsLabel.Name = "toolsLabel";
+            this.toolsLabel.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.toolsLabel.Size = new System.Drawing.Size(55, 20);
+            this.toolsLabel.TabIndex = 1;
+            this.toolsLabel.Text = "Tools";
             // 
             // clipboardPanel
             // 
@@ -187,32 +233,106 @@ namespace MicrosoftPaintClone
             this.clipboardLabel.TabIndex = 0;
             this.clipboardLabel.Text = "Clipboard";
             // 
-            // toolsPanel
+            // brushesPanel
             // 
-            this.toolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolsPanel.Controls.Add(this.toolsMagnifierPictureBox);
-            this.toolsPanel.Controls.Add(this.toolsColorPickerPictureBox);
-            this.toolsPanel.Controls.Add(this.toolsEraserPictureBox);
-            this.toolsPanel.Controls.Add(this.toolsLabel);
-            this.toolsPanel.Controls.Add(this.toolsFillWithColorPictureBox);
-            this.toolsPanel.Controls.Add(this.toolsTextPictureBox);
-            this.toolsPanel.Controls.Add(this.toolsPencilPictureBox);
-            this.toolsPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolsPanel.Location = new System.Drawing.Point(201, 0);
-            this.toolsPanel.Name = "toolsPanel";
-            this.toolsPanel.Size = new System.Drawing.Size(168, 128);
-            this.toolsPanel.TabIndex = 2;
+            this.brushesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.brushesPanel.Controls.Add(this.brushesCombobox);
+            this.brushesPanel.Controls.Add(this.brushesPictureBox);
+            this.brushesPanel.Controls.Add(this.brushesLabel);
+            this.brushesPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.brushesPanel.Location = new System.Drawing.Point(369, 0);
+            this.brushesPanel.Name = "brushesPanel";
+            this.brushesPanel.Size = new System.Drawing.Size(70, 128);
+            this.brushesPanel.TabIndex = 2;
             // 
-            // toolsLabel
+            // brushesLabel
             // 
-            this.toolsLabel.AutoSize = true;
-            this.toolsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.toolsLabel.Location = new System.Drawing.Point(53, 101);
-            this.toolsLabel.Name = "toolsLabel";
-            this.toolsLabel.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.toolsLabel.Size = new System.Drawing.Size(55, 20);
-            this.toolsLabel.TabIndex = 1;
-            this.toolsLabel.Text = "Tools";
+            this.brushesLabel.AutoSize = true;
+            this.brushesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.brushesLabel.Location = new System.Drawing.Point(-11, 101);
+            this.brushesLabel.Name = "brushesLabel";
+            this.brushesLabel.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.brushesLabel.Size = new System.Drawing.Size(80, 20);
+            this.brushesLabel.TabIndex = 2;
+            this.brushesLabel.Text = "Brushes";
+            // 
+            // brushesCombobox
+            // 
+            this.brushesCombobox.FormattingEnabled = true;
+            this.brushesCombobox.Location = new System.Drawing.Point(12, 63);
+            this.brushesCombobox.Name = "brushesCombobox";
+            this.brushesCombobox.Size = new System.Drawing.Size(43, 21);
+            this.brushesCombobox.TabIndex = 4;
+            // 
+            // shapesPanel
+            // 
+            this.shapesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shapesPanel.Controls.Add(this.shapesTrianglePictureBox);
+            this.shapesPanel.Controls.Add(this.ShapesRectanglePictureBox);
+            this.shapesPanel.Controls.Add(this.ShapesCirclePictureBox);
+            this.shapesPanel.Controls.Add(this.shapesLinePictureBox);
+            this.shapesPanel.Controls.Add(this.shapesLabel);
+            this.shapesPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.shapesPanel.Location = new System.Drawing.Point(439, 0);
+            this.shapesPanel.Name = "shapesPanel";
+            this.shapesPanel.Size = new System.Drawing.Size(159, 128);
+            this.shapesPanel.TabIndex = 2;
+            // 
+            // shapesLabel
+            // 
+            this.shapesLabel.AutoSize = true;
+            this.shapesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.shapesLabel.Location = new System.Drawing.Point(47, 102);
+            this.shapesLabel.Name = "shapesLabel";
+            this.shapesLabel.Size = new System.Drawing.Size(64, 20);
+            this.shapesLabel.TabIndex = 3;
+            this.shapesLabel.Text = "Shapes";
+            // 
+            // shapesTrianglePictureBox
+            // 
+            this.shapesTrianglePictureBox.BackgroundImage = global::MicrosoftPaintClone.Properties.Resources.triangle;
+            this.shapesTrianglePictureBox.Location = new System.Drawing.Point(20, 57);
+            this.shapesTrianglePictureBox.Name = "shapesTrianglePictureBox";
+            this.shapesTrianglePictureBox.Size = new System.Drawing.Size(27, 27);
+            this.shapesTrianglePictureBox.TabIndex = 7;
+            this.shapesTrianglePictureBox.TabStop = false;
+            // 
+            // ShapesRectanglePictureBox
+            // 
+            this.ShapesRectanglePictureBox.Image = global::MicrosoftPaintClone.Properties.Resources.rectangle;
+            this.ShapesRectanglePictureBox.Location = new System.Drawing.Point(112, 14);
+            this.ShapesRectanglePictureBox.Name = "ShapesRectanglePictureBox";
+            this.ShapesRectanglePictureBox.Size = new System.Drawing.Size(27, 27);
+            this.ShapesRectanglePictureBox.TabIndex = 6;
+            this.ShapesRectanglePictureBox.TabStop = false;
+            // 
+            // ShapesCirclePictureBox
+            // 
+            this.ShapesCirclePictureBox.BackgroundImage = global::MicrosoftPaintClone.Properties.Resources.line;
+            this.ShapesCirclePictureBox.Image = global::MicrosoftPaintClone.Properties.Resources.circle;
+            this.ShapesCirclePictureBox.Location = new System.Drawing.Point(66, 14);
+            this.ShapesCirclePictureBox.Name = "ShapesCirclePictureBox";
+            this.ShapesCirclePictureBox.Size = new System.Drawing.Size(27, 27);
+            this.ShapesCirclePictureBox.TabIndex = 5;
+            this.ShapesCirclePictureBox.TabStop = false;
+            // 
+            // shapesLinePictureBox
+            // 
+            this.shapesLinePictureBox.BackgroundImage = global::MicrosoftPaintClone.Properties.Resources.line;
+            this.shapesLinePictureBox.Location = new System.Drawing.Point(20, 14);
+            this.shapesLinePictureBox.Name = "shapesLinePictureBox";
+            this.shapesLinePictureBox.Size = new System.Drawing.Size(27, 27);
+            this.shapesLinePictureBox.TabIndex = 4;
+            this.shapesLinePictureBox.TabStop = false;
+            // 
+            // brushesPictureBox
+            // 
+            this.brushesPictureBox.BackgroundImage = global::MicrosoftPaintClone.Properties.Resources.brush1;
+            this.brushesPictureBox.Location = new System.Drawing.Point(12, 15);
+            this.brushesPictureBox.Name = "brushesPictureBox";
+            this.brushesPictureBox.Size = new System.Drawing.Size(43, 42);
+            this.brushesPictureBox.TabIndex = 3;
+            this.brushesPictureBox.TabStop = false;
             // 
             // toolsMagnifierPictureBox
             // 
@@ -371,14 +491,23 @@ namespace MicrosoftPaintClone
             this.MainMenuStrip = this.paintMenuStrip;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "mainForm";
+            this.Text = "z";
             this.paintMenuStrip.ResumeLayout(false);
             this.paintMenuStrip.PerformLayout();
             this.homeSubMenuPanel.ResumeLayout(false);
-            this.clipboardPanel.ResumeLayout(false);
-            this.clipboardPanel.PerformLayout();
             this.toolsPanel.ResumeLayout(false);
             this.toolsPanel.PerformLayout();
+            this.clipboardPanel.ResumeLayout(false);
+            this.clipboardPanel.PerformLayout();
+            this.brushesPanel.ResumeLayout(false);
+            this.brushesPanel.PerformLayout();
+            this.shapesPanel.ResumeLayout(false);
+            this.shapesPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shapesTrianglePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapesRectanglePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapesCirclePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shapesLinePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brushesPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsMagnifierPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsColorPickerPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsEraserPictureBox)).EndInit();
@@ -423,6 +552,16 @@ namespace MicrosoftPaintClone
         private System.Windows.Forms.PictureBox toolsMagnifierPictureBox;
         private System.Windows.Forms.PictureBox toolsColorPickerPictureBox;
         private System.Windows.Forms.PictureBox toolsEraserPictureBox;
+        private System.Windows.Forms.Panel brushesPanel;
+        private System.Windows.Forms.ComboBox brushesCombobox;
+        private System.Windows.Forms.PictureBox brushesPictureBox;
+        private System.Windows.Forms.Label brushesLabel;
+        private System.Windows.Forms.Panel shapesPanel;
+        private System.Windows.Forms.PictureBox shapesLinePictureBox;
+        private System.Windows.Forms.Label shapesLabel;
+        private System.Windows.Forms.PictureBox ShapesCirclePictureBox;
+        private System.Windows.Forms.PictureBox ShapesRectanglePictureBox;
+        private System.Windows.Forms.PictureBox shapesTrianglePictureBox;
     }
 }
 

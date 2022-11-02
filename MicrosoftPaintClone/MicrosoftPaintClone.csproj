@@ -92,6 +92,7 @@
     <None Include="resources\cut.PNG" />
     <None Include="resources\exitImage.PNG" />
     <None Include="resources\aboutPaint.PNG" />
+    <None Include="resources\brush1.PNG" />
     <Content Include="resources\brushes\brush1.PNG" />
     <Content Include="resources\brushes\brush2.PNG" />
     <Content Include="resources\brushes\brush3.PNG" />
@@ -101,6 +102,7 @@
     <Content Include="resources\brushes\brush7.PNG" />
     <Content Include="resources\brushes\brush8.PNG" />
     <Content Include="resources\brushes\brush9.PNG" />
+    <None Include="resources\circle.PNG" />
     <Content Include="resources\clipboard section\copy.PNG" />
     <Content Include="resources\clipboard section\cut.PNG" />
     <Content Include="resources\clipboard section\paste.PNG" />
@@ -123,7 +125,10 @@
     <None Include="resources\saveFile.PNG" />
     <None Include="resources\openFile.PNG" />
     <None Include="resources\newFile.PNG" />
+    <None Include="resources\line.PNG" />
     <Content Include="resources\notes.txt" />
+    <None Include="resources\rectangle.PNG" />
+    <None Include="resources\rectangle1.PNG" />
     <Content Include="resources\selection shapes\freeform select.PNG" />
     <Content Include="resources\selection shapes\rectangular select.PNG" />
     <Content Include="resources\shapes icons\circle.PNG" />
@@ -136,6 +141,7 @@
     <Content Include="resources\tools icons\magnifier.PNG" />
     <Content Include="resources\tools icons\pencil.PNG" />
     <Content Include="resources\tools icons\text.PNG" />
+    <None Include="resources\triangle.PNG" />
     <Content Include="resources\zoom in.PNG" />
     <None Include="resources\zoom in1.PNG" />
     <Content Include="resources\zoom out.PNG" />
