@@ -14,24 +14,25 @@ namespace MicrosoftPaintClone
     {
         Graphics graphics;
         Pen pencil;
-        //Pen eraser;
+        Pen eraser;
         bool pencilEnabled = false;
         bool mousePressed = false;
         float previousX = 0.0f;
         float previousY = 0.0f;
-        //bool eraserEnabled = false;
+        bool eraserEnabled = false;
 
         public mainForm()
         {
             InitializeComponent();
+
+            graphics = this.CreateGraphics();
+            pencil = new Pen(Color.White, 1.0f);
+            eraser = new Pen(Color.White, 3.0f);
+
             //temporary combobox
             sizesCombobox.SelectedIndex = 0;
 
             colorOneWrapperPanel.BackColor = Color.DodgerBlue;
-
-            graphics = this.CreateGraphics();
-            pencil = new Pen(Color.White, 1.0f);
-            //eraser = new Pen(Color.White, 3.0f);
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -60,13 +61,43 @@ namespace MicrosoftPaintClone
         //TODO change sizes
         private void sizesCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //thin
+            if (sizesCombobox.SelectedIndex == 0)
+            {
+                pencil.Width = 1.0f;
+                eraser.Width = 4.0f;
+            }
+            //average
+            else if (sizesCombobox.SelectedIndex == 1) {
+                pencil.Width = 2.0f;
+                eraser.Width = 6.0f;
+            }
+            //fat
+            else if(sizesCombobox.SelectedIndex == 2)
+            {
+                pencil.Width = 3.0f;
+                eraser.Width = 8.0f;
+            }
+            //very fat
+            else if(sizesCombobox.SelectedIndex == 3)
+            {
+                pencil.Width = 4.0f;
+                eraser.Width = 10.0f;
+            }
         }
 
         private void toolsPencilPictureBox_Click(object sender, EventArgs e)
         {
             pencilEnabled = true;
             pencil.Color = colorOnePanel.BackColor;
-            //eraserEnabled = false;
+            eraserEnabled = false;
+        }
+
+        private void toolsEraserPictureBox_Click(object sender, EventArgs e)
+        {
+            eraserEnabled = true;
+            eraser.Color = colorTwoPanel.BackColor;
+            pencilEnabled = false;
         }
 
         //TODO change icons based on what is picked
@@ -101,6 +132,10 @@ namespace MicrosoftPaintClone
             if (pencilEnabled)
             {
                 graphics.DrawLine(pencil, previousX, previousY, e.X, e.Y);
+            }
+            else if (eraserEnabled) 
+            {
+                graphics.DrawLine(eraser, previousX, previousY, e.X, e.Y);
             }
 
             previousX = e.X;
@@ -145,5 +180,7 @@ namespace MicrosoftPaintClone
             colorTwoWrapperPanel.BackColor = Color.DodgerBlue;
             colorOneWrapperPanel.BackColor = Color.WhiteSmoke;
         }
+
+
     }
 }

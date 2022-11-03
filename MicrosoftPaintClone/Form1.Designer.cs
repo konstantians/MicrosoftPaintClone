@@ -62,7 +62,7 @@ namespace MicrosoftPaintClone
             this.ColorsOrangePanel = new System.Windows.Forms.Panel();
             this.colorsRedPanel = new System.Windows.Forms.Panel();
             this.colorTwoWrapperPanel = new System.Windows.Forms.Panel();
-            this.ColorTwoPanel = new System.Windows.Forms.Panel();
+            this.colorTwoPanel = new System.Windows.Forms.Panel();
             this.ColorTwoLabel = new System.Windows.Forms.Label();
             this.colorsDarkRedPanel = new System.Windows.Forms.Panel();
             this.colorsGrayPanel = new System.Windows.Forms.Panel();
@@ -460,7 +460,7 @@ namespace MicrosoftPaintClone
             // 
             // colorTwoWrapperPanel
             // 
-            this.colorTwoWrapperPanel.Controls.Add(this.ColorTwoPanel);
+            this.colorTwoWrapperPanel.Controls.Add(this.colorTwoPanel);
             this.colorTwoWrapperPanel.Controls.Add(this.ColorTwoLabel);
             this.colorTwoWrapperPanel.Location = new System.Drawing.Point(91, 3);
             this.colorTwoWrapperPanel.Name = "colorTwoWrapperPanel";
@@ -468,15 +468,15 @@ namespace MicrosoftPaintClone
             this.colorTwoWrapperPanel.TabIndex = 9;
             this.colorTwoWrapperPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.colorTwoWrapperPanel_MouseClick);
             // 
-            // ColorTwoPanel
+            // colorTwoPanel
             // 
-            this.ColorTwoPanel.BackColor = System.Drawing.Color.White;
-            this.ColorTwoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ColorTwoPanel.Location = new System.Drawing.Point(15, 13);
-            this.ColorTwoPanel.Name = "ColorTwoPanel";
-            this.ColorTwoPanel.Size = new System.Drawing.Size(35, 35);
-            this.ColorTwoPanel.TabIndex = 6;
-            this.ColorTwoPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ColorTwoPanel_MouseClick);
+            this.colorTwoPanel.BackColor = System.Drawing.Color.White;
+            this.colorTwoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorTwoPanel.Location = new System.Drawing.Point(15, 13);
+            this.colorTwoPanel.Name = "colorTwoPanel";
+            this.colorTwoPanel.Size = new System.Drawing.Size(35, 35);
+            this.colorTwoPanel.TabIndex = 6;
+            this.colorTwoPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ColorTwoPanel_MouseClick);
             // 
             // ColorTwoLabel
             // 
@@ -726,6 +726,7 @@ namespace MicrosoftPaintClone
             this.toolsEraserPictureBox.Size = new System.Drawing.Size(30, 28);
             this.toolsEraserPictureBox.TabIndex = 8;
             this.toolsEraserPictureBox.TabStop = false;
+            this.toolsEraserPictureBox.Click += new System.EventHandler(this.toolsEraserPictureBox_Click);
             // 
             // toolsFillWithColorPictureBox
             // 
@@ -1090,7 +1091,7 @@ namespace MicrosoftPaintClone
         private System.Windows.Forms.Panel colorPanel;
         private System.Windows.Forms.Panel colorsBlackPanel;
         private System.Windows.Forms.Panel colorTwoWrapperPanel;
-        private System.Windows.Forms.Panel ColorTwoPanel;
+        private System.Windows.Forms.Panel colorTwoPanel;
         private System.Windows.Forms.Label ColorTwoLabel;
         private System.Windows.Forms.Label colorLabel;
         private System.Windows.Forms.Panel colorOneWrapperPanel;
