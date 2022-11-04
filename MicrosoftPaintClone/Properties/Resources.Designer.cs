@@ -93,6 +93,26 @@ namespace MicrosoftPaintClone.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ClearAllDeactivatedIcon {
+            get {
+                object obj = ResourceManager.GetObject("ClearAllDeactivatedIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ClearAllIcon {
+            get {
+                object obj = ResourceManager.GetObject("ClearAllIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colorPicker {
             get {
                 object obj = ResourceManager.GetObject("colorPicker", resourceCulture);
@@ -106,6 +126,16 @@ namespace MicrosoftPaintClone.Properties {
         internal static System.Drawing.Bitmap copy {
             get {
                 object obj = ResourceManager.GetObject("copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cropIcon {
+            get {
+                object obj = ResourceManager.GetObject("cropIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +283,46 @@ namespace MicrosoftPaintClone.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rectangular_select {
+            get {
+                object obj = ResourceManager.GetObject("rectangular select", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redoDeactivatedIcon {
+            get {
+                object obj = ResourceManager.GetObject("redoDeactivatedIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("resizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rotateRight90DegreesIcon {
+            get {
+                object obj = ResourceManager.GetObject("rotateRight90DegreesIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap saveFile {
             get {
                 object obj = ResourceManager.GetObject("saveFile", resourceCulture);
@@ -296,6 +366,16 @@ namespace MicrosoftPaintClone.Properties {
         internal static System.Drawing.Bitmap triangle {
             get {
                 object obj = ResourceManager.GetObject("triangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undoDeactivatedIcon {
+            get {
+                object obj = ResourceManager.GetObject("undoDeactivatedIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

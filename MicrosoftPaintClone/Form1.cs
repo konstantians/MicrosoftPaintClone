@@ -51,6 +51,7 @@ namespace MicrosoftPaintClone
 
             //temporary combobox
             sizesCombobox.SelectedIndex = 0;
+            imageSelectCombobox.SelectedIndex = 0;
 
             colorOneWrapperPanel.BackColor = Color.DodgerBlue;
         }
@@ -170,6 +171,16 @@ namespace MicrosoftPaintClone
                     eraser.Width
                     ));
             }
+
+            if(allPointNodes.Count != 0)
+            {
+                ControlsClearAllPictureBox.Image = global::MicrosoftPaintClone.Properties.Resources.ClearAllIcon;
+            }
+            else
+            {
+                ControlsClearAllPictureBox.Image = global::MicrosoftPaintClone.Properties.Resources.ClearAllDeactivatedIcon;
+            }
+
 
             previousX = e.X;
             previousY = e.Y;
@@ -392,6 +403,16 @@ namespace MicrosoftPaintClone
 
             if (colorOneWrapperPanel.BackColor == Color.DodgerBlue) { colorOnePanel.BackColor = color; pencil.Color = color; }
             else colorTwoPanel.BackColor = color; eraser.Color = color;
+        }
+
+        private void ControlsClearAllPictureBox_Click(object sender, EventArgs e)
+        {
+            if (allPointNodes.Count == 0) return;
+            DialogResult dialogResult = MessageBox.Show("Are You Sure You Want To Delete Everything?", "Deletion Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Restart();
+            }
         }
     }
 }

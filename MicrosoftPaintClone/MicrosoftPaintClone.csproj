@@ -106,6 +106,12 @@
     <Content Include="resources\clipboard section\copy.PNG" />
     <Content Include="resources\clipboard section\cut.PNG" />
     <Content Include="resources\clipboard section\paste.PNG" />
+    <None Include="resources\control panel icons\ClearAllIcon.PNG" />
+    <Content Include="resources\control panel icons\ClearAllDeactivatedIcon.PNG" />
+    <Content Include="resources\control panel icons\redoActivatedIcon.PNG" />
+    <Content Include="resources\control panel icons\redoDeactivatedIcon.PNG" />
+    <Content Include="resources\control panel icons\undoActivatedIcon.PNG" />
+    <Content Include="resources\control panel icons\undoDeactivatedIcon.PNG" />
     <Content Include="resources\file section icons\about.PNG" />
     <Content Include="resources\file section icons\exit.PNG" />
     <Content Include="resources\file section icons\new.PNG" />
@@ -129,6 +135,13 @@
     <None Include="resources\rectangle.PNG" />
     <None Include="resources\rectangle1.PNG" />
     <None Include="resources\percentage zoom.PNG" />
+    <Content Include="resources\images options\cropIcon.PNG" />
+    <Content Include="resources\images options\flipHorizontalyIcon.PNG" />
+    <Content Include="resources\images options\flipVerticalIcon.PNG" />
+    <Content Include="resources\images options\resizeIcon.PNG" />
+    <Content Include="resources\images options\rotate180Degrees.PNG" />
+    <Content Include="resources\images options\rotateLeft90DegreesIcon.PNG" />
+    <Content Include="resources\images options\rotateRight90DegreesIcon.PNG" />
     <Content Include="resources\selection shapes\freeform select.PNG" />
     <Content Include="resources\selection shapes\rectangular select.PNG" />
     <Content Include="resources\shapes icons\circle.PNG" />
