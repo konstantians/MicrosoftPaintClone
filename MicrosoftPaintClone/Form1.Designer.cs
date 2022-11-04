@@ -311,6 +311,7 @@ namespace MicrosoftPaintClone
             this.colorsLavenderPanel.Name = "colorsLavenderPanel";
             this.colorsLavenderPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsLavenderPanel.TabIndex = 22;
+            this.colorsLavenderPanel.Click += new System.EventHandler(this.colorsLavenderPanel_Click);
             // 
             // colorsBlueGrayPanel
             // 
@@ -319,6 +320,7 @@ namespace MicrosoftPaintClone
             this.colorsBlueGrayPanel.Name = "colorsBlueGrayPanel";
             this.colorsBlueGrayPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsBlueGrayPanel.TabIndex = 21;
+            this.colorsBlueGrayPanel.Click += new System.EventHandler(this.colorsBlueGrayPanel_Click);
             // 
             // colorsLightTurquoisePanel
             // 
@@ -327,6 +329,7 @@ namespace MicrosoftPaintClone
             this.colorsLightTurquoisePanel.Name = "colorsLightTurquoisePanel";
             this.colorsLightTurquoisePanel.Size = new System.Drawing.Size(25, 25);
             this.colorsLightTurquoisePanel.TabIndex = 20;
+            this.colorsLightTurquoisePanel.Click += new System.EventHandler(this.colorsLightTurquoisePanel_Click);
             // 
             // colorsLightGreenPanel
             // 
@@ -335,6 +338,7 @@ namespace MicrosoftPaintClone
             this.colorsLightGreenPanel.Name = "colorsLightGreenPanel";
             this.colorsLightGreenPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsLightGreenPanel.TabIndex = 19;
+            this.colorsLightGreenPanel.Click += new System.EventHandler(this.colorsLightGreenPanel_Click);
             // 
             // colorsLightYellowPanel
             // 
@@ -343,6 +347,7 @@ namespace MicrosoftPaintClone
             this.colorsLightYellowPanel.Name = "colorsLightYellowPanel";
             this.colorsLightYellowPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsLightYellowPanel.TabIndex = 18;
+            this.colorsLightYellowPanel.Click += new System.EventHandler(this.colorsLightYellowPanel_Click);
             // 
             // colorLabel
             // 
@@ -361,6 +366,7 @@ namespace MicrosoftPaintClone
             this.colorsGoldPanel.Name = "colorsGoldPanel";
             this.colorsGoldPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsGoldPanel.TabIndex = 17;
+            this.colorsGoldPanel.Click += new System.EventHandler(this.colorsGoldPanel_Click);
             // 
             // colorsPinkPanel
             // 
@@ -369,6 +375,7 @@ namespace MicrosoftPaintClone
             this.colorsPinkPanel.Name = "colorsPinkPanel";
             this.colorsPinkPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsPinkPanel.TabIndex = 16;
+            this.colorsPinkPanel.Click += new System.EventHandler(this.colorsPinkPanel_Click);
             // 
             // colorsBrownPanel
             // 
@@ -377,6 +384,7 @@ namespace MicrosoftPaintClone
             this.colorsBrownPanel.Name = "colorsBrownPanel";
             this.colorsBrownPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsBrownPanel.TabIndex = 15;
+            this.colorsBrownPanel.Click += new System.EventHandler(this.colorsBrownPanel_Click);
             // 
             // colorsLightGrayPanel
             // 
@@ -385,6 +393,7 @@ namespace MicrosoftPaintClone
             this.colorsLightGrayPanel.Name = "colorsLightGrayPanel";
             this.colorsLightGrayPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsLightGrayPanel.TabIndex = 14;
+            this.colorsLightGrayPanel.Click += new System.EventHandler(this.colorsLightGrayPanel_Click);
             // 
             // colorsWhitePanel
             // 
@@ -393,6 +402,7 @@ namespace MicrosoftPaintClone
             this.colorsWhitePanel.Name = "colorsWhitePanel";
             this.colorsWhitePanel.Size = new System.Drawing.Size(25, 25);
             this.colorsWhitePanel.TabIndex = 13;
+            this.colorsWhitePanel.Click += new System.EventHandler(this.colorsWhitePanel_Click);
             // 
             // colorsPurplePanel
             // 
@@ -401,6 +411,7 @@ namespace MicrosoftPaintClone
             this.colorsPurplePanel.Name = "colorsPurplePanel";
             this.colorsPurplePanel.Size = new System.Drawing.Size(25, 25);
             this.colorsPurplePanel.TabIndex = 8;
+            this.colorsPurplePanel.Click += new System.EventHandler(this.colorsPurplePanel_Click);
             // 
             // colorsIndigoPanel
             // 
@@ -409,6 +420,7 @@ namespace MicrosoftPaintClone
             this.colorsIndigoPanel.Name = "colorsIndigoPanel";
             this.colorsIndigoPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsIndigoPanel.TabIndex = 9;
+            this.colorsIndigoPanel.Click += new System.EventHandler(this.colorsIndigoPanel_Click);
             // 
             // colorsTurquoisePanel
             // 
@@ -417,6 +429,7 @@ namespace MicrosoftPaintClone
             this.colorsTurquoisePanel.Name = "colorsTurquoisePanel";
             this.colorsTurquoisePanel.Size = new System.Drawing.Size(25, 25);
             this.colorsTurquoisePanel.TabIndex = 10;
+            this.colorsTurquoisePanel.Click += new System.EventHandler(this.colorsTurquoisePanel_Click);
             // 
             // colorsGreenPanel
             // 
@@ -425,6 +438,7 @@ namespace MicrosoftPaintClone
             this.colorsGreenPanel.Name = "colorsGreenPanel";
             this.colorsGreenPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsGreenPanel.TabIndex = 11;
+            this.colorsGreenPanel.Click += new System.EventHandler(this.colorsGreenPanel_Click);
             // 
             // colorsYellowPanel
             // 
@@ -433,6 +447,7 @@ namespace MicrosoftPaintClone
             this.colorsYellowPanel.Name = "colorsYellowPanel";
             this.colorsYellowPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsYellowPanel.TabIndex = 12;
+            this.colorsYellowPanel.Click += new System.EventHandler(this.colorsYellowPanel_Click);
             // 
             // colorsBlackPanel
             // 
@@ -441,14 +456,16 @@ namespace MicrosoftPaintClone
             this.colorsBlackPanel.Name = "colorsBlackPanel";
             this.colorsBlackPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsBlackPanel.TabIndex = 3;
+            this.colorsBlackPanel.Click += new System.EventHandler(this.colorsBlackPanel_Click);
             // 
             // ColorsOrangePanel
             // 
-            this.ColorsOrangePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ColorsOrangePanel.BackColor = System.Drawing.Color.Orange;
             this.ColorsOrangePanel.Location = new System.Drawing.Point(300, 16);
             this.ColorsOrangePanel.Name = "ColorsOrangePanel";
             this.ColorsOrangePanel.Size = new System.Drawing.Size(25, 25);
             this.ColorsOrangePanel.TabIndex = 4;
+            this.ColorsOrangePanel.Click += new System.EventHandler(this.ColorsOrangePanel_Click);
             // 
             // colorsRedPanel
             // 
@@ -457,6 +474,7 @@ namespace MicrosoftPaintClone
             this.colorsRedPanel.Name = "colorsRedPanel";
             this.colorsRedPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsRedPanel.TabIndex = 7;
+            this.colorsRedPanel.Click += new System.EventHandler(this.colorsRedPanel_Click);
             // 
             // colorTwoWrapperPanel
             // 
@@ -496,6 +514,7 @@ namespace MicrosoftPaintClone
             this.colorsDarkRedPanel.Name = "colorsDarkRedPanel";
             this.colorsDarkRedPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsDarkRedPanel.TabIndex = 5;
+            this.colorsDarkRedPanel.Click += new System.EventHandler(this.colorsDarkRedPanel_Click);
             // 
             // colorsGrayPanel
             // 
@@ -505,6 +524,7 @@ namespace MicrosoftPaintClone
             this.colorsGrayPanel.Name = "colorsGrayPanel";
             this.colorsGrayPanel.Size = new System.Drawing.Size(25, 25);
             this.colorsGrayPanel.TabIndex = 6;
+            this.colorsGrayPanel.Click += new System.EventHandler(this.colorsGrayPanel_Click);
             // 
             // colorOneWrapperPanel
             // 
@@ -717,6 +737,7 @@ namespace MicrosoftPaintClone
             this.toolsColorPickerPictureBox.Size = new System.Drawing.Size(30, 28);
             this.toolsColorPickerPictureBox.TabIndex = 9;
             this.toolsColorPickerPictureBox.TabStop = false;
+            this.toolsColorPickerPictureBox.Click += new System.EventHandler(this.toolsColorPickerPictureBox_Click);
             // 
             // toolsEraserPictureBox
             // 
@@ -988,6 +1009,8 @@ namespace MicrosoftPaintClone
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaintClone";
+            this.SizeChanged += new System.EventHandler(this.mainForm_SizeChanged);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseClick);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseDown);
             this.MouseEnter += new System.EventHandler(this.mainForm_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.mainForm_MouseLeave);
